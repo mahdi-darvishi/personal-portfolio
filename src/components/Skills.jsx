@@ -24,7 +24,7 @@ const Skills = () => {
       className="min-h-screen flex flex-col items-center justify-center gap-y-20"
     >
       <Heading text={"Skills"} />
-      <div className="w-full flex justify-center sm:justify-between flex-wrap gap-9 lg:gap-y-6 sm:gap-x-3">
+      <div className="w-full flex justify-center  flex-wrap gap-9 lg:gap-y-6 sm:gap-x-3">
         {skillsData.map((item, i) => (
           <motion.div
             custom={i}
