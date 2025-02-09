@@ -1,5 +1,6 @@
 "use client";
 import { navbarData, copyRightIcon } from "@/assets";
+import Link from "next/link";
 
 const Navbar = ({ id }) => {
   return (
@@ -12,7 +13,7 @@ const Navbar = ({ id }) => {
       </a>
       <div className="flex flex-col gap-y-3 xl:gap-y-1 sm:gap-y-2 xs:gap-y-0">
         {navbarData.map((item, i) => (
-          <a
+          <Link
             href={`/#${item.id}`}
             key={i}
             className="group flex flex-col items-center gap-y-2"
@@ -33,7 +34,7 @@ const Navbar = ({ id }) => {
             >
               {item.name}
             </span>
-          </a>
+          </Link>
         ))}
       </div>
       <p className="flex items-center justify-center text-[13px] xs:text-[11px] text-gray-500 mt-6">
