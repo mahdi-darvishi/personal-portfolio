@@ -3,6 +3,7 @@ import Image from "next/image";
 import { heroIcons } from "@/assets";
 import { useMotionValue, useTransform, motion, useSpring } from "framer-motion";
 import { useState } from "react";
+import Link from "next/link";
 
 const Hero = () => {
   const [windowOffset, setWindowOffset] = useState({
@@ -93,13 +94,13 @@ const Hero = () => {
           className="mt-8 flex justify-center gap-x-10 text-3xl text-yellow-600 sm:text-2xl"
         >
           {heroIcons.map((icon, i) => (
-            <a
+            <Link
               href="#"
               key={i}
               className="rounded-lg hover:bg-red-400 hover:text-white transition-colors"
             >
               {icon}
-            </a>
+            </Link>
           ))}
         </motion.div>
         <motion.a
