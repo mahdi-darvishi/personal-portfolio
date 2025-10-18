@@ -22,4 +22,4 @@ npm run dev
 ## Live Demo
 
 The project is available online:  
-[View Project](https://personal-portfolio-gzcs7oln5-mehdi-darvishiiis-projects.vercel.app/)
+[View Project](https://personal-portfolio-snowy-alpha.vercel.app/)
